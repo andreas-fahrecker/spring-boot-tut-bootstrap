@@ -4,6 +4,10 @@ import javax.persistence.*;
 
 @Entity
 public class Movie {
+    public long getId() {
+        return id;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
